@@ -2,8 +2,8 @@ services:
   - type: web
     name: money-docs-api
     env: python
-    buildCommand: pip install -r backend/requirements.txt
-    startCommand: cd backend && python run.py
+    buildCommand: pip install -r requirements.txt
+    startCommand: python backend/run.py
     envVars:
       - key: PYTHON_VERSION
         value: 3.9
